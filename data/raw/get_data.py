@@ -1,31 +1,15 @@
-# Imports
-import skyfield.api as skyapi
-from tletools import TLE
+from spacetrack import SpaceTrackClient
+from dotenv import load_dotenv
+import os
 
-# Load data
-loader = skyapi.Loader(r"C:\\Users\\Nicolas\\Documents\\Projecten\\ORBIT\\data\\raw\\")
-active_satellites_url = 'tle_data.tle'
-satellites = loader.tle(active_satellites_url)
+load_dotenv()
 
-#print(satellites.keys())
-#print(satellites.values())
-#print(satellites.items())
-#print(type(satellites))
+username = os.getenv('SPACETRACK_USERNAME')
+password = os.getenv('SPACETRACK_PASSWORD')
 
-#k, v = satellites.items()
+st = SpaceTrackClient(username, password)
+tle_data = st.tle_latest(norad_cat_id=[25544, 41335], ordinal=1, format='tle')
+print(tle_data)
 
-
-
-
-#satellites = load.tle(lines)
-#print(satellites)
-
-# Calculate its position at the current time
-#ts = load.timescale()
-#t = ts.now()
-#geocentric = satellites.at(t)
-
-# Earth ground based location
-#subpoint = geocentric.subpoint()
-#print('Latitude:', subpoint.latitude.degrees)
-#print('Longitude:', subpoint.longitude.degrees)
+with open('data/raw/tle_data.tle', 'w') as tle_file:
+    tle_file.write(tle_data)
