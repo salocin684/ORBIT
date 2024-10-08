@@ -1,9 +1,11 @@
-import yaml
 from spacetrack import SpaceTrackClient
+from dotenv import load_dotenv
+import os
 
-with open('config/config.yaml', 'r') as file:
-    config = yaml.safe_load(file)
+load_dotenv()
 
-username = config['SPACETRACK_USERNAME']
-password = config['SPACETRACK_PASSWORD']
+username = os.getenv('SPACETRACK_USERNAME')
+password = os.getenv('SPACETRACK_PASSWORD')
+
+from spacetrack import SpaceTrackClient
 st = SpaceTrackClient(username, password)
