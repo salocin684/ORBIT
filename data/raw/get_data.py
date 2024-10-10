@@ -17,7 +17,7 @@ norad_cat_ids = list(range(11, 61448))
 os.makedirs('data/raw', exist_ok=True)
 
 with open('data/raw/tle_data.tle', 'w') as tle_file:
-    batch_size = 128
+    batch_size = 256
     for i in range(0, len(norad_cat_ids), batch_size):
         batch_ids = norad_cat_ids[i:i + batch_size]
         try:
