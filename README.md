@@ -12,11 +12,11 @@ The goal of this phase is to establish a core system for tracking and visualizin
 
 **Key Tasks:**
 
-- Research orbital mechanics and space debris behavior.
-- Access and use space debris data (e.g., from Space-Track.org or CelesTrak).
-- Set up a development environment with required tools and libraries.
-- Build a system to calculate and track the positions of debris over time.
-- Create a basic 2D visualization of debris orbits. (Optional)
+- [x] Research orbital mechanics and space debris behavior.
+- [x] Access and use space debris data (e.g., from Space-Track.org or CelesTrak).
+- [] Set up a development environment with required tools and libraries.
+- [] Build a system to calculate and track the positions of debris over time.
+- [] Create a basic 2D visualization of debris orbits. (Optional)
 
 ### Phase 2: Advanced Features (Thesis Level)
 
@@ -24,11 +24,11 @@ In this phase, you’ll extend the core functionality by adding real-time tracki
 
 **Key Tasks:**
 
-- Create interactive 3D visualizations of space debris orbits (optional).
-- Implement real-time tracking by regularly updating debris positions.
-- Develop a basic algorithm to predict potential collisions between space debris and operational satellites.
-- Integrate AI or machine learning models to improve collision prediction accuracy.
-- Implement a notification system to alert users of potential collision risks.
+- [] Create interactive 3D visualizations of space debris orbits (optional).
+- [] Implement real-time tracking by regularly updating debris positions.
+- [] Develop a basic algorithm to predict potential collisions between space debris and operational satellites.
+- [] Integrate AI or machine learning models to improve collision prediction accuracy.
+- [] Implement a notification system to alert users of potential collision risks.
 
 ### Phase 3: AI-Based Prediction and Forecasting (Optional/Extra)
 
@@ -36,9 +36,9 @@ This phase introduces more advanced AI and machine learning techniques for predi
 
 **Key Tasks:**
 
-- Build an AI-based model to forecast future debris positions using historical data.
-- Implement optimization algorithms to suggest satellite maneuvers to avoid collisions while minimizing resource use (e.g., fuel efficiency).
-- Explore more advanced AI techniques, such as deep learning models, to enhance prediction accuracy.
+- [] Build an AI-based model to forecast future debris positions using historical data.
+- [] Implement optimization algorithms to suggest satellite maneuvers to avoid collisions while minimizing resource use (e.g., fuel efficiency).
+- [] Explore more advanced AI techniques, such as deep learning models, to enhance prediction accuracy.
 
 ### Phase 4: Additional Enhancements (Outside Thesis Scope)
 
@@ -46,8 +46,8 @@ These are optional features that go beyond the thesis scope but could significan
 
 **Key Tasks:**
 
-- Develop a system that uses AI to detect new or untracked debris using satellite imagery.
-- Allow crowd-sourced data from users to contribute to the space debris database and improve tracking accuracy.
+- [] Develop a system that uses AI to detect new or untracked debris using satellite imagery.
+- [] Allow crowd-sourced data from users to contribute to the space debris database and improve tracking accuracy.
 
 ## Project Breakdown
 
