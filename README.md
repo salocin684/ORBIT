@@ -14,7 +14,7 @@ The goal of this phase is to establish a core system for tracking and visualizin
 
 - [x] Research orbital mechanics and space debris behavior.
 - [x] Access and use space debris data (e.g., from Space-Track.org or CelesTrak).
-- [] Set up a development environment with required tools and libraries.
+- [x] Set up a development environment with required tools and libraries.
 - [] Build a system to calculate and track the positions of debris over time.
 - [] Create a basic 2D visualization of debris orbits. (Optional)
 
